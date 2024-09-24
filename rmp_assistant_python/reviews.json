@@ -1,0 +1,18 @@
+{
+    "reviews":[
+        {
+            "professor":"Abebe",
+            "review":"Great professor...",
+            "subject":"Math",
+            "stars":5
+        }
+        ,
+        {
+            "professor":"Nahom",
+            "review":"Bad professor...",
+            "subject":"Math",
+            "stars":5
+        }
+
+    ]
+}
