@@ -1,5 +1,40 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+
+
+## Setup Instructions on how to set up the virtual environment and install the dependencies.
+
+1. **Clone the repository**:
+    ```sh
+    git clone https://github.com/Blacknahil/Rate_My_Professor.git
+    cd Rate_My_Professor
+    cd rmp_assistant_python
+    ```
+
+2. **Create a virtual environment**:
+    ```sh
+    python -m venv venv
+    ```
+
+3. **Activate the virtual environment**:
+    - On macOS and Linux:
+        ```sh
+        source venv/bin/activate
+        ```
+    - On Windows:
+        ```sh
+        .\venv\Scripts\activate
+        ```
+
+4. **Install the dependencies**:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+5. **Run the project**:
+    Follow any additional instructions specific to your project.
+
 ## Getting Started
 
 First, run the development server:
