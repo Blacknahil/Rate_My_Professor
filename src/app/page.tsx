@@ -1,5 +1,5 @@
 'use client'
-import { Box,Typography,Button,Stack,TextField } from "@mui/material"
+import { Box,Button,Stack,TextField } from "@mui/material"
 import { useState } from "react"
 
 export default function Home(){
@@ -30,6 +30,7 @@ export default function Home(){
       body:JSON.stringify([...messages,{role:'user',content:message}])
 
     }).then(async (res)=>{
+      console.log(messages)
       const decoder= new TextDecoder()
       if (res.body){
         const reader= res.body.getReader()
@@ -40,6 +41,7 @@ export default function Home(){
             return Promise.resolve(result)
           }
           const text = decoder.decode(value || new Uint8Array(), {stream: true})
+          console.log("text",text)
           setMessages((messages) => {
             const  lastMessage = messages[messages.length - 1]
             const  otherMessages = messages.slice(0, messages.length - 1)
