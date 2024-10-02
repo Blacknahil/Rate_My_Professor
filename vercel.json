@@ -14,14 +14,14 @@
         "use": "@vercel/python"
       },
       {
-        "src": "./reviews.json",
+        "src": "rmp_assistant_python/reviews.json",
         "use": "@vercel/static"
       }
   ],
 "routes": [
-  {
-    "src": "./reviews.json",
-    "dest": "rmp_assistant_python/reviews.json"
-  }
+    {
+        "src": "/rmp_assistant_python/reviews.json",
+        "dest": "rmp_assistant_python/reviews.json"
+      }
 ]
 }

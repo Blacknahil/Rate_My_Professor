@@ -21,8 +21,11 @@ except PineconeApiException as e:
 # Connect to the index
 print("Setup completed successfully")
 
-# laod the review data
-data= json.load(open('./reviews.json'))
+current_dir=os.path.dirname(os.path.abspath(__file__))
+reviews_path = os.path.join(current_dir, 'reviews.json')
+
+# load the review data
+data= json.load(open(reviews_path))
 
 processed_data=[]
 # response = model.generate_content("Write a story about a magic backpack.")
