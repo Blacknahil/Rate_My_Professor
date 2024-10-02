@@ -8,6 +8,20 @@
         "buildCommand": "bash ./vercel-build.sh",
         "outputDirectory": "out"
       }
-    }
-  ]
+    },
+    {
+        "src": "rmp_assistant_python/setup_rag.py",
+        "use": "@vercel/python"
+      },
+      {
+        "src": "rmp_assistant_python/reviews.json",
+        "use": "@vercel/static"
+      }
+  ],
+"routes": [
+  {
+    "src": "/rmp_assistant_python/reviews.json",
+    "dest": "rmp_assistant_python/reviews.json"
+  }
+]
 }
