@@ -5,8 +5,7 @@
       "use": "@vercel/next",
       "config": {
         "installCommand": "npm install",
-        "buildCommand": "bash ./vercel-build.sh",
-        "outputDirectory": "out"
+        "buildCommand": "bash ./vercel-build.sh"
       }
     },
     {
