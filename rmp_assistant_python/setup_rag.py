@@ -22,7 +22,7 @@ except PineconeApiException as e:
 print("Setup completed successfully")
 
 # laod the review data
-data= json.load(open('reviews.json'))
+data= json.load(open('./reviews.json'))
 
 processed_data=[]
 # response = model.generate_content("Write a story about a magic backpack.")
